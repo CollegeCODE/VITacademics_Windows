@@ -354,6 +354,9 @@ namespace VITacademics
                 case ControlTypeCodes.CourseInfo:
                     titleText = "Course Details";
                     break;
+                case ControlTypeCodes.AcademicHistory:
+                    titleText = "Grades";
+                    break;
                 default:
                     titleText = "VITacademics";
                     break;

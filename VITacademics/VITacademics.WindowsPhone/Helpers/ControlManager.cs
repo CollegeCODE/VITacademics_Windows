@@ -13,7 +13,8 @@ namespace VITacademics.Helpers
         Overview = 0,
         BasicTimetable = 1,
         EnhancedTimetable = 2,
-        CourseInfo = 3
+        CourseInfo = 3,
+        AcademicHistory = 4
     }
 
     public class ControlManager : IManageable
@@ -32,6 +33,7 @@ namespace VITacademics.Helpers
             _typeCodeDictionary.Add(typeof(CourseInfoControl), ControlTypeCodes.CourseInfo);
             _typeCodeDictionary.Add(typeof(BasicTimetableControl), ControlTypeCodes.BasicTimetable);
             _typeCodeDictionary.Add(typeof(EnhancedTimetableControl), ControlTypeCodes.EnhancedTimetable);
+            _typeCodeDictionary.Add(typeof(AcademicHistoryControl), ControlTypeCodes.AcademicHistory);
         }
 
         #endregion
@@ -112,6 +114,9 @@ namespace VITacademics.Helpers
                     break;
                 case ControlTypeCodes.EnhancedTimetable:
                     _currentControl = new EnhancedTimetableControl();
+                    break;
+                case ControlTypeCodes.AcademicHistory:
+                    _currentControl = new AcademicHistoryControl();
                     break;
             }
             _currentControlCode = controlTypeCode;
