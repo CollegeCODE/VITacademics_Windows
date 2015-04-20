@@ -72,7 +72,8 @@ namespace VITacademics.UIControls
             MenuItems.Add(new MenuItem("overview", "a summary of all your courses", Symbol.Globe));
             MenuItems.Add(new MenuItem("timetable", "your regular schedule of classes", "ms-appx:///Assets/Icons/TimetableButton.scale-240.png"));
             MenuItems.Add(new MenuItem("daily buzz", "watch your activity and set reminders", Symbol.Calendar));
-            MenuItems.Add(new MenuItem("grades", "your academic history and cgpa calculator", "ms-appx:///Assets/Icons/GraphButton.scale-240.png"));
+            // Incomplete feature.
+            // MenuItems.Add(new MenuItem("grades", "your academic history and cgpa calculator", "ms-appx:///Assets/Icons/GraphButton.scale-240.png"));
             
             this.DataContext = this;
         }
